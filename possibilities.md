@@ -19,21 +19,17 @@ SECTION 1 doesn't matter who has the move
   - [] The same as the last example but also with any number of same colored bishops that are trapped in their kings respective site and cannot be taken by any pawn in any position they could reach. 8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
 
 SECTION 2 our turn
-  - [] One opponent cannot checkmate the other because every move we do stalemate or make draw as in explained on SECTION 1.
-  - [] One opponent cannot checkmate the other because after every move we do, the opponent in every move checkmates or stalemates us.
-  - [] The same reasoning but becoming more complicated
+  - [] We cannot checkmate the opponent because every move we stalemate him.
+  - [] We cannot checkmate the opponent because every move we make draw as in explained on SECTION 1.
+  - [] We cannot checkmate the opponent because after every move we do, the opponent in every move checkmates or stalemates us.
+  - [] We cannot checkmate the opponent because after every move we do, after every move he does, after every move we do, the opponent in every move checkmates or stalemates us. (To be possible it has to be impossible to come again to the last position)
 SECTION 3 his turn
   - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us.
     - [] He/She is on check
       - [] He/she can move his/her king (If he/she could move his/her king, and that move is checkmate there must be a discovered check in a different direction than the direction the check came from)
-<<<<<<< HEAD
       - [] He/she can't move his/her king Kb4b1/b7/8/3B4/8/8/7B/6Bk b - - 0 1
     - [] He/She isn't on check
       - [] He/she can move his/her king
       - [] He/she can't move his/her king
-=======
-      - [] He/she can's move his/her king Kb4b1/b7/8/3B4/8/8/7B/6Bk b - - 0 1
-    - [] He/She isn't on check
->>>>>>> e0e49ab298a89f47b3121da3cb4fdd3009032166
   - [] You cannot checkmate the opponent because he in every move after every move we do after every move he does checkmates or stalemates us.
   - [] The same reasoning but becoming more complicated
