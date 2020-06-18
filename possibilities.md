@@ -18,13 +18,13 @@ SECTION 1 doesn't matter who has the move
   - [] King and pawns blocked with other pawns and divide the board in two parts with a barrier that the kings cannot cross, and they are on the side where they cannot take any piece. 8/1k6/1p1p1p1p/pPpPpPpP/P1P1P1P1/8/5K2/8 w - - 0 1
   - [] The same as the last example but also with any number of same colored bishops that are trapped in their kings respective site and cannot be taken by any pawn in any position they could reach. 8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
 
-SECTION 2 our turn
-  - [] We cannot checkmate the opponent because every move we stalemate him.
-  - [] We cannot checkmate the opponent because every move we make draw as in explained on SECTION 1.
+SECTION 2 only on our turn
+  - [] We cannot checkmate the opponent because every move stalemates him (read stalemate.md).
+  - [] We cannot checkmate the opponent because every move makes a draw as in explained on SECTION 1.
   - [] We cannot checkmate the opponent because after every move we do, the opponent in every move checkmates or stalemates us.
   - [] We cannot checkmate the opponent because after every move we do, after every move he does, after every move we do, the opponent in every move checkmates or stalemates us. (To be possible it has to be impossible to come again to the last position)
-SECTION 3 his turn
-  - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us.
+SECTION 3 only on his turn
+  - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us (read stalemate.md).
     - [] He/She is on check
       - [] He/she can move his/her king (If he/she could move his/her king, and that move is checkmate there must be a discovered check in a different direction than the direction the check came from)
       - [] He/she can't move his/her king Kb4b1/b7/8/3B4/8/8/7B/6Bk b - - 0 1
