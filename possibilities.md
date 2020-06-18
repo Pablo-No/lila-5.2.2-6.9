@@ -26,8 +26,8 @@ SECTION our turn
 SECTION his turn
   - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us.
     - [] He/She is on check
-      - [] He/she can move his/her king (If he/she could move his/her king, and that move is checkmate there must be a discovered check)
+      - [] He/she can move his/her king (If he/she could move his/her king, and that move is checkmate there must be a discovered check in a different direction than the direction the check came from)
       - [] He/she can's move his/her king Kb4b1/b7/8/3B4/8/8/7B/6Bk b - - 0 1
     - [] He/She isn't on check
-  - [] You cannot checkmate the opponent because he in every move after every move we do he in every move checkmates or stalemates us.
+  - [] You cannot checkmate the opponent because he in every move after every move we do after every move he does checkmates or stalemates us.
   - [] The same reasoning but becoming more complicated
