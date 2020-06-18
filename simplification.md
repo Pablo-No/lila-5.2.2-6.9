@@ -12,4 +12,4 @@ As we can see to solve this problem we can do a simplification, if we determined
 - In law 5.2.2 we could apply it for both players on every single half-move we could determine when we end on a dead position.
 - In law 6.9 we could apply this to the player who hadn't run out of time and know if he could checkmate his opponent.
 
-So we have reduced our initial problem to only creating one algorithm to know if one opponent could checkmate the other, so we have to know how to determine this, continues on algorithm.md.
+So we have reduced our initial problem to only creating one algorithm to know if one opponent could checkmate the other, so we have to know how to determine this, continues on possibilities.md.
