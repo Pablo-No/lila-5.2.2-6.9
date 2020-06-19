@@ -20,9 +20,9 @@ SECTION 1 doesn't matter who has the move
 
 SECTION 2 only on our turn
   - [] We cannot checkmate the opponent because every move stalemates him (read stalemate.md).
-  - [] We cannot checkmate the opponent because every move makes a draw as in explained on SECTION 1.
+  - [] We cannot checkmate the opponent because every move makes a draw as in explained on SECTION 1. 8/8/8/8/8/5k2/3q4/3K4 w - - 0 1
   - [] We cannot checkmate the opponent because after every move we do, the opponent in every move checkmates or stalemates us.
-  - [] We cannot checkmate the opponent because after every move we do, after every move he does, after every move we do, the opponent in every move checkmates or stalemates us. (To be possible it has to be impossible to come again to the last position)
+  - [] We cannot checkmate the opponent because he/she is forced to checkmate or stalemate us in 1 or 2 moves (excluding that it only takes 1 move because it's placed on the first option in SECTION 3). (To be possible it has to be impossible to come again to the original position, read repetition.md)
 SECTION 3 only on his turn
   - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us.
     - [] He/She is on check
@@ -31,5 +31,9 @@ SECTION 3 only on his turn
     - [] He/She isn't on check
       - [] He/she can move his/her king
       - [] He/she can't move his/her king
-  - [] You cannot checkmate the opponent because he in every move after every move we do after every move he does checkmates or stalemates us.
+  - [] You cannot checkmate the opponent he/she is forced to checkmate or stalemate us in 1 or 2 (excluding that it only takes 1 move because it's placed on the first option in SECTION 3).
+    - [] Every move gives a check
+      - [] Only one possible move
+      - [] More than one possible move
+    - [] Not every move gives a check.
   - [] The same reasoning but becoming more complicated kB1q2q1/B4q2/4q3/Q2Q2q1/2Q5/1Q6/Q6b/6bK b - - 0 1

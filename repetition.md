@@ -1,0 +1,7 @@
+Question: ¿Is it possible for a position to be impossible to repeat in 4 half-moves?
+Answer: Yes, there are lot's and lot's of examples:
+- 8/8/8/8/8/5k2/3q4/3K4 w - - 0 1
+- 8/7P/8/8/8/5k2/2q5/K7 w - - 0 1
+Question: ¿Is it necessary that the king makes the move that makes the position be impossible to repeat? (Excluding positions that end by insufficient material)
+Answer: Of course, we only need more material in the board 8/8/8/8/6q1/5k2/2q5/2K5 w - - 0 1
+Question: ¿What are all the ways to force a possition to be impossible to repeat?
