@@ -1,0 +1,3 @@
+Question: Is it possible to be forced to stalemate the opponent?
+Answer: Of course 7k/5Q2/8/8/8/8/2q5/2K5_w_-_-_0_1
+Question: And while not being on check?
