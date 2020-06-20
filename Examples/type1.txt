@@ -1,0 +1,11 @@
+Some cannot happen in a real game:
+
+7k/2p1p3/1pP1Pp2/1P1n1P1p/1p3p1P/1Pp1pP2/2P1P3/7K w - - 0 1
+7k/1p1p4/pP1Pp3/P1n1P2p/p3p2P/Pp1pP3/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp3/P1n1P1p1/p3p1P1/Pp1pP3/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp3/P1n1P1p1/p3p1P1/Pp1pP3/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp3/PbBbP1p1/pBbBp1P1/Pp1pP3/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp3/PbBbP3/pBbBp1p1/Pp1pP1P1/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp1p1/PbBbP1P1/pBbBp3/Pp1pP3/1P1P4/7K w - - 0 1
+7k/1p1p4/pP1Pp1p1/PbBbP1P1/pBbBp3/Pp1pP3/1P1P4/7K w - - 0 1
+7k/8/1p6/bP6/Bp6/1P6/8/7K w - - 0 1
