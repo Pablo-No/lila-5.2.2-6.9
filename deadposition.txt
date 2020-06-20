@@ -13,9 +13,8 @@ move producing the position was in accordance with Article 3 and Articles
 IMPOSSIBLE = We know it's IMPOSSIBLE
 An example = We know it's possible
 
-Let's try to determine all possibilities:
+Let's try to determine insufficient material possibilities for one side:
 
-SECTION 1 doesn't matter who has the move
   - [] One opponent cannot checkmate other because he/she doesn't have enough
   pieces to do it, this possibilities are simple to implement, let's make a list
   about the material that the side we are checking and the opponent, as
@@ -45,10 +44,33 @@ SECTION 1 doesn't matter who has the move
       - [] At least one rook 6rk/8/5B1K/8/8/8/8/8 w - - 0 1
       - Any number of queens INCORRECT, you cannot checkmate the opponent if he
       or she has a queen.
-  - [] King and pawns blocked with other pawns and divide the board in two parts
-  with a barrier that the kings cannot cross, and they are on the side where
-  they cannot take any piece. 8/1k6/1p1p1p1p/pPpPpPpP/P1P1P1P1/8/5K2/8 w - - 0 1
-  - [] The same as the last example but also with any number of same colored
-  bishops that are trapped in their kings respective site and cannot be taken or
-  take any pawn in any position they could reach.
-  8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
+
+This includes more possibilities, but insufficient material draw only happens
+when both players have insufficient material, so I'll try to resume
+possibilities for both sides.
+
+- Kk
+- KNk
+- King and any number of same colored bishop versus king and any number of
+same colored bishops also of the same color than the first ones.
+
+Now it's very easy to determine that type of draw, now we have to deal with
+harder ones:
+
+- [] King and pawns blocked with other pawns and divide the board in two parts
+with a barrier that the kings cannot cross, and they are on the side where
+they cannot take any piece. 8/1k6/1p1p1p1p/pPpPpPpP/P1P1P1P1/8/5K2/8 w - - 0 1
+- [] The same as the last example but also with any number of same colored
+bishops that are trapped in their kings respective site and cannot be taken or
+take any pawn in any position they could reach.
+8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
+- [] Other examples in Examples/type1.txt
+
+
+This is easy to implement, we can call all draws we've seen before these types
+of draw basic dead draw, because in them it doesn't matter who has the move,
+now we have to deal with other types of draws:
+
+- [] A position where any move leads to a basic dead draw or a draw by stalemate
+
+Is this possible, yes, there are many examples of that while being on check,
