@@ -19,10 +19,10 @@ SECTION 1 doesn't matter who has the move
   - [] The same as the last example but also with any number of same colored bishops that are trapped in their kings respective site and cannot be taken by any pawn in any position they could reach. 8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
 
 SECTION 2 only on our turn
-  - [] We cannot checkmate the opponent because every move stalemates him (read stalemate.md).
+  - [] We cannot checkmate the opponent because every move stalemates him (read stalemate.txt).
   - [] We cannot checkmate the opponent because every move makes a draw as in explained on SECTION 1. 8/8/8/8/8/5k2/3q4/3K4 w - - 0 1
   - [] We cannot checkmate the opponent because after every move we do, the opponent in every move checkmates or stalemates us.
-  - [] We cannot checkmate the opponent because he/she is forced to checkmate or stalemate us in 1 or 2 moves (excluding that it only takes 1 move because it's placed on the first option in SECTION 3). (To be possible it has to be impossible to come again to the original position, read repetition.md)
+  - [] We cannot checkmate the opponent because he/she is forced to checkmate or stalemate us in 1 or 2 moves (excluding that it only takes 1 move because it's placed on the first option in SECTION 3). (To be possible it has to be impossible to come again to the original position, read repetition.txt)
 SECTION 3 only on his turn
   - [] You cannot checkmate the opponent because he in every move checkmates or stalemates us.
     - [] He/She is on check
