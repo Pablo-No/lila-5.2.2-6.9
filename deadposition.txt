@@ -41,14 +41,25 @@ What do they have in common:
   - All the pieces are blocked or trapped.
   - No piece can capture another piece.
 
-SECTION 3 Derivated dead draws
+SECTION 3 Derivate dead draws
 Let's call positions in SECTION 1 and 2 basic dead draws, now we have to work
 with mixes with them or stalemate.
-- [] A position where every move leads to any position in SECTION 1 ?
+- [] A position where every move leads to any position in SECTION 1
+If before the move we weren't in section 1, that means the move we're forced to
+do is a capture, and that means that the position without one of the pieces I
+am forced to capture is draw, that means that there are three cases.
+  - [] The position we're forced to reach is Kk
+  If it comes from a position that wasn't already in SECTION 1 that means we're
+  forced to capture a queen, a rook or a pawn and there's one possible move:
+    - [] Queen 7k/8/8/8/8/8/1q6/K7 w - - 0 1
+    - [] Rook 7k/8/8/8/8/8/1r6/K7 w - - 0 1
+    - [] Pawn IMPOSSIBLE
+  - [] The position we're forced to reach is KNk or Kkn
+    - The position we're forced to reach is KNk
 - [] A position where every move leads to any position in SECTION 2 ?
 - [] A position where every move leads to a draw by stalemate ?
-- [] Any position that leads to any position in SECTION 1 or 2 where doesn't
+- [] Any position where every move leads to any position in SECTION 1 or 2 where doesn't
 matter who has to move. ?
-- [] Any position with leads to any position in SECTION 1 or stalemate ?
-- [] Any position with leads to any position in SECTION 2 or stalemate ?
-- [] Any position with leads to any position in SECTION 1, 2 or stalemate ?
+- [] Any position where every move leads to any position in SECTION 1 or stalemate ?
+- [] Any position where every move leads to any position in SECTION 2 or stalemate ?
+- [] Any position where every move leads to any position in SECTION 1, 2 or stalemate ?
