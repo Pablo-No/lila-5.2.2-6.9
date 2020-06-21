@@ -51,11 +51,23 @@ am forced to capture is draw, that means that there are three cases.
   - [] The position we're forced to reach is Kk
   If it comes from a position that wasn't already in SECTION 1 that means we're
   forced to capture a queen, a rook or a pawn and there's one possible move:
-    - [] Queen 7k/8/8/8/8/8/1q6/K7 w - - 0 1
-    - [] Rook 7k/8/8/8/8/8/1r6/K7 w - - 0 1
+    - [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K7 w - - 0 1
+    - [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K7 w - - 0 1
     - [] Pawn IMPOSSIBLE
   - [] The position we're forced to reach is KNk or Kkn
-    - The position we're forced to reach is KNk
+    - The position we're forced to reach is KNk, we're forced to take:
+      - [] Pawn IMPOSSIBLE (Knight can always move)
+      - [] Knight IMPOSSIBLE (Knight can move, king can move, or it's immediate
+      checkmate)
+      - [] Bishop (Needs check) 8/8/8/8/8/1kb5/8/KN6 w - - 0 1
+      - [] Rook (Needs check) 7N/8/8/8/8/3k4/8/3Kr3 w - - 0 1
+      - [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K6N w - - 0 1
+    - The position we're forced to reach is KNk, we're forced to take:
+      - [] Pawn IMPOSSIBLE ?
+      - [] Knight IMPOSSIBLE ?
+      - [] Bishop (Needs check) ?
+      - [] Rook (Needs check) ?
+      - [] Queen (Needs check) ?
 - [] A position where every move leads to any position in SECTION 2 ?
 - [] A position where every move leads to a draw by stalemate ?
 - [] Any position where every move leads to any position in SECTION 1 or 2 where doesn't
