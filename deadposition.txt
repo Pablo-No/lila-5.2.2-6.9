@@ -47,7 +47,7 @@ with mixes with them or stalemate.
 - [] A position where every move leads to any position in SECTION 1
 If before the move we weren't in section 1, that means the move we're forced to
 do is a capture, and that means that the position without one of the pieces I
-am forced to capture is draw, that means that there are three cases.
+am forced to capture is draw, that means that there are three cases and mixes.
   - [] The position we're forced to reach is Kk
   If it comes from a position that wasn't already in SECTION 1 that means we're
   forced to capture a queen, a rook or a pawn and there's one possible move:
@@ -68,10 +68,31 @@ am forced to capture is draw, that means that there are three cases.
       - [] Bishop (Doesn't need check) 7n/8/8/8/8/k7/8/Kb6 w - - 0 1
       - [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K6n w - - 0 1
       - [] Queen (Needs check) 7n/8/8/8/8/8/6q1/k6K w - - 0 1
+  - [] The position we're forced to reach is King and any number of same colored
+  bishop versus king and any number of same colored bishops also of the same
+  color than the first ones.
+    - [] We don't have any bishops
+      - [] Pawn (Doesn't need check) k7/8/8/8/8/4b3/4p3/4K3 w - - 0 1
+      - [] Knight (Doesn't need check) 8/8/8/8/8/5b2/4k2n/6K1 w - - 0 1
+      - [] Other colored bishop (Doesn't need check)
+      8/8/8/8/8/8/5k1b/b6K w - - 0 1
+      - [] Rook (Doesn't need check) 6bk/8/8/8/8/8/1r6/K7 w - - 0 1
+      - [] Queen (Needs check) 6bk/8/8/8/8/8/1q6/K7 w - - 0 1
+    - [] We have at least one bishop
+      - [] Pawn ?
+      - [] Knight ?
+      - [] Other colored bishop ?
+      - [] Rook ?
+      - [] Queen ?
+
 - [] A position where every move leads to any position in SECTION 2 ?
 - [] A position where every move leads to a draw by stalemate ?
-- [] Any position where every move leads to any position in SECTION 1 or 2 where doesn't
+- [] Any position where every move leads to any position in SECTION 1 or 2 where
+ doesn't
 matter who has to move. ?
-- [] Any position where every move leads to any position in SECTION 1 or stalemate ?
-- [] Any position where every move leads to any position in SECTION 2 or stalemate ?
-- [] Any position where every move leads to any position in SECTION 1, 2 or stalemate ?
+- [] Any position where every move leads to any position in SECTION 1 or
+stalemate ?
+- [] Any position where every move leads to any position in SECTION 2 or
+stalemate ?
+- [] Any position where every move leads to any position in SECTION 1, 2 or
+stalemate ?
