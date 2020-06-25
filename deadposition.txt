@@ -79,12 +79,16 @@ am forced to capture is draw, that means that there are three cases and mixes.
       - [] Rook (Doesn't need check) 6bk/8/8/8/8/8/1r6/K7 w - - 0 1
       - [] Queen (Needs check) 6bk/8/8/8/8/8/1q6/K7 w - - 0 1
     - [] We have at least one bishop
-      - [] Pawn ?
-      - [] Knight ?
-      - [] Other colored bishop ?
-      - [] Rook ?
-      - [] Queen ?
-
+      - [] Pawn (Doesn't need check)
+KB1B1B1B/B1B1B1B1/1BkB1B1p/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
+      - [] Knight (Doesn't need check)
+KB1B1B1B/B1B1B1B1/1BkB1B1n/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
+      - [] Other colored bishop (Doesn't need check)
+1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1/bB1B1B1B/K1B1BkB1 w - - 0 1
+      - [] Rook (Doesn't need check)
+KB1B1B1B/B1B1B1B1/1BkB1B1r/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
+      - [] Queen (Doesn't need check)
+KB1B1B1B/B1B1B1B1/1BkB1B1q/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
 - [] A position where every move leads to any position in SECTION 2 ?
 - [] A position where every move leads to a draw by stalemate ?
 - [] Any position where every move leads to any position in SECTION 1 or 2 where
