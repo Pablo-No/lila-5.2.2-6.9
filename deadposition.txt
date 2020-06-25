@@ -95,6 +95,11 @@ KB1B1B1B/B1B1B1B1/1BkB1B1n/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 
 KB1B1B1B/B1B1B1B1/1BkB1B1r/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
       - [] Queen (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1q/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
+  - [] Mixes (we can choose between two or more pieces)
+    - [] Kknn
+    - [] Kknb
+    - [] Kkbb
+    - [] ...
 - [] A position where every move leads to any position in SECTION 2 ?
 - [] A position where every move leads to a draw by stalemate ?
 - [] Any position where every move leads to any position in SECTION 1 or 2 where
