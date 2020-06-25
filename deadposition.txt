@@ -13,6 +13,12 @@ move producing the position was in accordance with Article 3 and Articles
 IMPOSSIBLE = We know it's IMPOSSIBLE
 An example = We know it's possible
 
+Sometimes I'm going to make a list of pieces using the initial of the pieces,
+in uppercase for white and in lowercase for black, however it's necessary to
+modify this rule, (n)K means any number of white knights, LB stands for a light
+colored bishop owned by white and DB stands for dark colored bishop owned by
+black. B stands for any bishop owned by white.
+
 Let's try to determine insufficient material possibilities for one side:
 
 SECTION 1 Insufficient material
