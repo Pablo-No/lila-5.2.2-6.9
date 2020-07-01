@@ -50,6 +50,7 @@ What do they have in common:
 SECTION 3 Derivate dead draws
 Let's call positions in SECTION 1 and 2 basic dead draws, now we have to work
 with mixes with them or stalemate.
+SECTION 3.1
 - [] A position where every move leads to any position in SECTION 1
 If before the move we weren't in section 1, that means the move we're forced to
 do is a capture, and that means that the position without one of the pieces I
@@ -96,18 +97,35 @@ KB1B1B1B/B1B1B1B1/1BkB1B1r/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 
       - [] Queen (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1q/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
   - [] Mixes (we can choose between two or more pieces)
-    - [] Kknn
-    - [] Kknb
+    - [] Kknn (Doesn't need check) 8/8/8/8/8/k7/2n5/1Kn5 w - - 0 1
+    - [] Kknb (Doesn't need check) 8/8/8/8/8/8/nb6/1K1k4 w - - 0 1
     - [] Kkbb
-    - [] ...
+      - [] IMPOSSIBLE it would be already a draw.
+      - [] Different color (Needs check) 8/8/8/8/8/8/bb6/1K1k4 w - - 0 1
+    - [] Kk and more bishops
+      - [] If white has bishops they have to be all of the same color and there
+      must be only one more different colored bishop that is going to be
+      captured by the king on the next turn, that means there is one possible
+      move and that doesn't fit on this section.
+      - [] If black had more than two bishops then there must be only on bishop
+      on light or dark squares, that means that it would have to be captured by
+      the king on the next move and there wouldn't be more than one option to
+      capture, so that wouldn't fit on this section.
+      - [] Kk and knights and bishops ?
+SECTION 3.2
 - [] A position where every move leads to any position in SECTION 2 ?
+SECTION 3.3
 - [] A position where every move leads to a draw by stalemate ?
+SECTION 3.4
 - [] Any position where every move leads to any position in SECTION 1 or 2 where
  doesn't
 matter who has to move. ?
+SECTION 3.5
 - [] Any position where every move leads to any position in SECTION 1 or
 stalemate ?
+SECTION 3.6
 - [] Any position where every move leads to any position in SECTION 2 or
 stalemate ?
+SECTION 3.7
 - [] Any position where every move leads to any position in SECTION 1, 2 or
 stalemate ?
