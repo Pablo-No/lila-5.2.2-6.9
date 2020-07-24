@@ -100,18 +100,28 @@ KB1B1B1B/B1B1B1B1/1BkB1B1q/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 
     - [] Kknn (Doesn't need check) 8/8/8/8/8/k7/2n5/1Kn5 w - - 0 1
     - [] Kknb (Doesn't need check) 8/8/8/8/8/8/nb6/1K1k4 w - - 0 1
     - [] Kkbb
-      - [] IMPOSSIBLE it would be already a draw.
+      - [] Same color IMPOSSIBLE it would be already a draw.
       - [] Different color (Needs check) 8/8/8/8/8/8/bb6/1K1k4 w - - 0 1
     - [] Kk and more bishops
-      - [] If white has bishops they have to be all of the same color and there
+      - If we have bishops they have to be all of the same color and there
       must be only one more different colored bishop that is going to be
       captured by the king on the next turn, that means there is one possible
-      move and that doesn't fit on this section.
-      - [] If black had more than two bishops then there must be only on bishop
-      on light or dark squares, that means that it would have to be captured by
-      the king on the next move and there wouldn't be more than one option to
-      capture, so that wouldn't fit on this section.
-      - [] Kk and knights and bishops ?
+      move and that doesn't fit on this section. IMPOSSIBLE
+      - If the opponent had more than two bishops then there must be only one
+      bishop on light or dark squares, that means that it would have to be
+      captured by the king on the next move and there wouldn't be more than one
+      option to capture, so that wouldn't fit on this section. IMPOSSIBLE
+   - Kk and knight(s) and bishops of the opponent:
+      - [] We don't have pieces: If the opponent has at least a knight
+      and a bishop, he can checkmates us, all the bishops must be same colored,
+      because if not with bishops and knights we wouldn't be able to capture a
+      piece making draw in the next turn. If there are more than one bishop, we
+      would have to capture the knight and as there would be only one possible
+      move it wouldn't belong to this section. IMPOSSIBLE
+   -[] We have at least one piece (except all bishops)
+    - [] KBkn ?
+    - [] KNkb ?
+
 SECTION 3.2
 - [] A position where every move leads to any position in SECTION 2 ?
 SECTION 3.3
