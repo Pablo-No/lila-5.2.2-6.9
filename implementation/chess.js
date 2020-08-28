@@ -1,4 +1,4 @@
-function chessPosition(array possitionArray) {
+function chessPosition(possitionArray) {
   this.positionArray = possitionArray;
   this.fen.start = "";
   for(y of this.positionArray){
