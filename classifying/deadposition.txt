@@ -23,25 +23,25 @@ Let's try to determine insufficient material possibilities for one side:
 
 SECTION 1 Insufficient material
 
-- [] Insufficient material. (This are all possibilities that make checkmating
+-1 [] Insufficient material. (This are all possibilities that make checkmating
 impossible for both sides)
-  - [] Kk
-  - [] KNk
-  - [] King and any number of same colored bishop versus king and any number of
+  -1 [] Kk
+  -2 [] KNk
+  -3 [] King and any number of same colored bishop versus king and any number of
   same colored bishops also of the same color than the first ones.
 
 Now it's very easy to determine that type of draw, now we have to deal with
 harder ones:
 
 SECTION 2 No one can make progress
-- [] King and pawns blocked with other pawns and divide the board in two parts
+-1 [] King and pawns blocked with other pawns and divide the board in two parts
 with a barrier that the kings cannot cross, and they are on the side where
 they cannot take any piece. 8/1k6/1p1p1p1p/pPpPpPpP/P1P1P1P1/8/5K2/8 w - - 0 1
-- [] The same as the last example but also with any number of same colored
+-2 [] The same as the last example but also with any number of same colored
 bishops that are trapped in their kings respective site and cannot be taken or
 take any pawn in any position they could reach.
 8/1k2b3/1p1p1p1p/pPpPpPpP/P1P1P1P1/1B6/5K2/8 w - - 0 1
-- [] Other examples in Examples/type1.txt
+-3 [] Other examples in Examples/type1.txt
 What do they have in common:
   - No side can make progress.
   - All the pieces are blocked or trapped.
@@ -50,92 +50,84 @@ What do they have in common:
 SECTION 3 Derivate dead draws
 Let's call positions in SECTION 1 and 2 basic dead draws, now we have to work
 with mixes with them or stalemate.
-SECTION 3.1
-- [] A position where every move leads to any position in SECTION 1
+-1 [] A position where every move leads to any position in SECTION 1
 If before the move we weren't in section 1, that means the move we're forced to
 do is a capture, and that means that the position without one of the pieces I
 am forced to capture is draw, that means that there are three cases and mixes.
-  - [] The position we're forced to reach is Kk
+  -1 [] The position we're forced to reach is Kk
   If it comes from a position that wasn't already in SECTION 1 that means we're
   forced to capture a queen, a rook or a pawn and there's one possible move:
-    - [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K7 w - - 0 1
-    - [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K7 w - - 0 1
-    - [] Pawn IMPOSSIBLE
-  - [] The position we're forced to reach is KNk or Kkn
-    - The position we're forced to reach is KNk, we're forced to take:
-      - [] Pawn IMPOSSIBLE (Knight can always move)
-      - [] Knight IMPOSSIBLE (Knight can move, king can move, or it's immediate
+    -1 [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K7 w - - 0 1
+    -2 [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K7 w - - 0 1
+    -3 [] Pawn IMPOSSIBLE
+  -2 [] The position we're forced to reach is KNk or Kkn
+    -1 The position we're forced to reach is KNk, we're forced to take:
+      -1 [] Pawn IMPOSSIBLE (Knight can always move)
+      -2 [] Knight IMPOSSIBLE (Knight can move, king can move, or it's immediate
       checkmate)
-      - [] Bishop (Needs check) 8/8/8/8/8/1kb5/8/KN6 w - - 0 1
-      - [] Rook (Needs check) 7N/8/8/8/8/3k4/8/3Kr3 w - - 0 1
-      - [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K6N w - - 0 1
-    - The position we're forced to reach is Kkn, we're forced to take:
-      - [] Pawn (Doesn't need check) 3k4/8/8/8/3n4/8/3p4/3K4 w - - 0 1
-      - [] Knight (Doesn't need check) 7n/8/8/8/8/k7/8/Kn6 w - - 0 1
-      - [] Bishop (Doesn't need check) 7n/8/8/8/8/k7/8/Kb6 w - - 0 1
-      - [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K6n w - - 0 1
-      - [] Queen (Needs check) 7n/8/8/8/8/8/6q1/k6K w - - 0 1
-  - [] The position we're forced to reach is King and any number of same colored
+      -3 [] Bishop (Needs check) 8/8/8/8/8/1kb5/8/KN6 w - - 0 1
+      -4 [] Rook (Needs check) 7N/8/8/8/8/3k4/8/3Kr3 w - - 0 1
+      -5 [] Queen (Needs check) 7k/8/8/8/8/8/1q6/K6N w - - 0 1
+    -3 The position we're forced to reach is Kkn, we're forced to take:
+      -1 [] Pawn (Doesn't need check) 3k4/8/8/8/3n4/8/3p4/3K4 w - - 0 1
+      -2 [] Knight (Doesn't need check) 7n/8/8/8/8/k7/8/Kn6 w - - 0 1
+      -3 [] Bishop (Doesn't need check) 7n/8/8/8/8/k7/8/Kb6 w - - 0 1
+      -4 [] Rook (Doesn't need check) 7k/8/8/8/8/8/1r6/K6n w - - 0 1
+      -5 [] Queen (Needs check) 7n/8/8/8/8/8/6q1/k6K w - - 0 1
+  -3 [] The position we're forced to reach is King and any number of same colored
   bishop versus king and any number of same colored bishops also of the same
   color than the first ones.
-    - [] We don't have any bishops
-      - [] Pawn (Doesn't need check) k7/8/8/8/8/4b3/4p3/4K3 w - - 0 1
-      - [] Knight (Doesn't need check) 8/8/8/8/8/5b2/4k2n/6K1 w - - 0 1
-      - [] Other colored bishop (Doesn't need check)
+    -1 [] We don't have any bishops
+      -1 [] Pawn (Doesn't need check) k7/8/8/8/8/4b3/4p3/4K3 w - - 0 1
+      -2 [] Knight (Doesn't need check) 8/8/8/8/8/5b2/4k2n/6K1 w - - 0 1
+      -3 [] Other colored bishop (Doesn't need check)
       8/8/8/8/8/8/5k1b/b6K w - - 0 1
-      - [] Rook (Doesn't need check) 6bk/8/8/8/8/8/1r6/K7 w - - 0 1
-      - [] Queen (Needs check) 6bk/8/8/8/8/8/1q6/K7 w - - 0 1
-    - [] We have at least one bishop
-      - [] Pawn (Doesn't need check)
+      -4 [] Rook (Doesn't need check) 6bk/8/8/8/8/8/1r6/K7 w - - 0 1
+      -5 [] Queen (Needs check) 6bk/8/8/8/8/8/1q6/K7 w - - 0 1
+    -2 [] We have at least one bishop
+      -1 [] Pawn (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1p/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
-      - [] Knight (Doesn't need check)
+      -2 [] Knight (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1n/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
-      - [] Other colored bishop (Doesn't need check)
+      -3 [] Other colored bishop (Doesn't need check)
 1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1/bB1B1B1B/K1B1BkB1 w - - 0 1
-      - [] Rook (Doesn't need check)
+      -4 [] Rook (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1r/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
-      - [] Queen (Doesn't need check)
+      -5 [] Queen (Doesn't need check)
 KB1B1B1B/B1B1B1B1/1BkB1B1q/B1B1B1B1/1B1B1B1B/B1B1B1B1/1B1B1B1B/B1B1B1B1 w - - 0 1
-  - [] Mixes (we can choose between two or more pieces)
-    - [] Kknn (Doesn't need check) 8/8/8/8/8/k7/2n5/1Kn5 w - - 0 1
-    - [] Kknb (Doesn't need check) 8/8/8/8/8/8/nb6/1K1k4 w - - 0 1
-    - [] Kkbb
-      - [] Same color IMPOSSIBLE it would be already a draw.
-      - [] Different color (Needs check) 8/8/8/8/8/8/bb6/1K1k4 w - - 0 1
-    - [] Kk and more bishops
-      - If we have bishops they have to be all of the same color and there
+  -4 [] Mixes (we can choose between two or more pieces)
+    -1 [] Kknn (Doesn't need check) 8/8/8/8/8/k7/2n5/1Kn5 w - - 0 1
+    -2 [] Kknb (Doesn't need check) 8/8/8/8/8/8/nb6/1K1k4 w - - 0 1
+    -3 [] Kkbb
+      -1 [] Same color IMPOSSIBLE it would be already a draw.
+      -2 [] Different color (Needs check) 8/8/8/8/8/8/bb6/1K1k4 w - - 0 1
+    -4 [] Kk and more bishops
+      -1 If we have bishops they have to be all of the same color and there
       must be only one more different colored bishop that is going to be
       captured by the king on the next turn, that means there is one possible
       move and that doesn't fit on this section. IMPOSSIBLE
-      - If the opponent had more than two bishops then there must be only one
+      -2 If the opponent had more than two bishops then there must be only one
       bishop on light or dark squares, that means that it would have to be
       captured by the king on the next move and there wouldn't be more than one
       option to capture, so that wouldn't fit on this section. IMPOSSIBLE
-   - Kk and knight(s) and bishops of the opponent:
-      - [] We don't have pieces: If the opponent has at least a knight
-      and a bishop, he can checkmates us, all the bishops must be same colored,
+   -5 Kk and knight(s) and bishops of the opponent:
+      -1 [] We don't have pieces: If the opponent has at least a knight
+      and a bishop, he can checkmate us, all the bishops must be same colored,
       because if not with bishops and knights we wouldn't be able to capture a
       piece making draw in the next turn. If there are more than one bishop, we
       would have to capture the knight and as there would be only one possible
       move it wouldn't belong to this section. IMPOSSIBLE
-   -[] We have at least one piece (except all bishops)
-    - [] KBkn ?
-    - [] KNkb ?
-
-SECTION 3.2
-- [] A position where every move leads to any position in SECTION 2 ?
-SECTION 3.3
-- [] A position where every move leads to a draw by stalemate ?
-SECTION 3.4
-- [] Any position where every move leads to any position in SECTION 1 or 2 where
+      -2 [] We have at least one piece (except all bishops)
+        -1 [] KBkn ?
+        -2 [] KNkb ?
+-2 [] A position where every move leads to any position in SECTION 2 ?
+-3 [] A position where every move leads to a draw by stalemate ?
+-4 [] Any position where every move leads to any position in SECTION 1 or 2 where
  doesn't
 matter who has to move. ?
-SECTION 3.5
-- [] Any position where every move leads to any position in SECTION 1 or
+-5 [] Any position where every move leads to any position in SECTION 1 or
 stalemate ?
-SECTION 3.6
-- [] Any position where every move leads to any position in SECTION 2 or
+-6 [] Any position where every move leads to any position in SECTION 2 or
 stalemate ?
-SECTION 3.7
-- [] Any position where every move leads to any position in SECTION 1, 2 or
+-7 [] Any position where every move leads to any position in SECTION 1, 2 or
 stalemate ?
