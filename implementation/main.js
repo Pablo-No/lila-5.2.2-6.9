@@ -1,5 +1,5 @@
-import chess from "./chess.js";
-test = new chess.chessPosition(
+import chessPosition from "./chess.js";
+test = new chessPosition(
 [
   ["r", "n", "b", "q", "k", "b", "n", "r"]
   ["p", "p", "p", "p", "p", "p", "p", "p"]
