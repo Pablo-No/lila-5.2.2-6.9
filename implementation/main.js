@@ -1,4 +1,4 @@
-import "./chess.js" as chess;
+import chess from "./chess.js";
 test = new chess.chessPosition(
 [
   ["r", "n", "b", "q", "k", "b", "n", "r"]
